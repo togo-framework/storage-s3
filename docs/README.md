@@ -1,6 +1,6 @@
 # storage-s3 — documentation
 
-  <img src=".github/assets/togo-mark.svg" alt="togo" height="64" />
+togo storage driver
 
 ## Overview
 
@@ -8,7 +8,8 @@ Package s3store is an AWS S3 driver for togo storage. It implements
 togo.Storage and overrides the default filesystem storage when installed.
 Blank-import + set S3_BUCKET (and the standard AWS_* credentials/region).
 
-	togo install togo-framework/storage-s3
+
+Env: S3_BUCKET (required), AWS_REGION (default us-east-1), AWS_ACCESS_KEY_ID,
 
 ## Install
 
@@ -20,12 +21,11 @@ Set `STORAGE_DRIVER=s3`.
 
 ## Configuration
 
-Environment variables read by this plugin (extracted from the source):
+Environment variables read by this plugin (extracted from the source — see the gateway/provider docs for each value):
 
-| Env var | Notes |
-|---|---|
-| `G` | _see provider docs_ |
-| `S3_BUCKET` | _see provider docs_ |
+| Env var |
+|---|
+| `S3_BUCKET"` |
 
 ## Usage
 
@@ -40,4 +40,4 @@ url := st.Path("path/file.txt")
 
 - Marketplace: https://to-go.dev/marketplace
 - Source: https://github.com/togo-framework/storage-s3
-- README: ../README.md
+- Full README: ../README.md
