@@ -25,7 +25,7 @@ Environment variables read by this plugin (extracted from the source — see the
 
 | Env var |
 |---|
-| `S3_BUCKET"` |
+| `S3_BUCKET` |
 
 ## Usage
 
